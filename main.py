@@ -8,8 +8,11 @@ mixer.init()
 
 try:
     mixer.music.load('the-final-boss-battle-158700.mp3')
+    mixer.music.set_volume(0.2)
     mixer.music.play(-1) 
+    
     fire_sound = mixer.Sound('fire.ogg')
+    fire_sound.set_volume(0.2)
 except:
     fire_sound = None
 
